@@ -7,7 +7,6 @@ import Integration from "~/components/Integration";
 import CTA from "~/components/CTA";
 import FAQ from "~/components/FAQ";
 import Contact from "~/components/Contact";
-import Testimonial from "~/components/Testimonial";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -29,7 +28,6 @@ export default function Home() {
       <Integration />
       <CTA />
       <FAQ />
-      <Testimonial />
       <Contact />
     </main>
   );

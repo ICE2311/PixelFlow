@@ -5,9 +5,7 @@ import { useState } from "react";
 const Hero = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
 
   return (
     <>
@@ -32,7 +30,7 @@ const Hero = () => {
               </p>
 
               <div className="mt-10">
-                <form onSubmit={handleSubmit}>
+                <form >
                   <div className="flex flex-wrap gap-5">
                     <input
                       value={email}

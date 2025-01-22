@@ -75,7 +75,7 @@ export default function ShareMenu({
                         Full access
                       </span>
                       <IoClose
-                        onClick={() => deleteInvitation(roomId, user.email)}
+                        onClick={() => deleteInvitation(roomId, user.email ?? '')}
                         className="h-4 w-4 cursor-pointer text-gray-500"
                       />
                     </div>

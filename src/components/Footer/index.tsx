@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="/" className="relative">
+                <Link href="/" className="relative">
                   <Image
                     width={110}
                     height={80}
@@ -43,7 +44,7 @@ const Footer = () => {
                     alt="Logo"
                     className="hidden dark:block"
                   />
-                </a>
+                </Link>
 
                 <p className="mb-10 mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

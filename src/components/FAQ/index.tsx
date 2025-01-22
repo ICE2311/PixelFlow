@@ -9,7 +9,11 @@ const FAQ = () => {
   const [activeFaq, setActiveFaq] = useState(1);
 
   const handleFaqToggle = (id: number) => {
-    activeFaq === id ? setActiveFaq(0) : setActiveFaq(id);
+    if (activeFaq === id) {
+      setActiveFaq(0);
+    } else {
+      setActiveFaq(id);
+    }
   };
 
   return (
